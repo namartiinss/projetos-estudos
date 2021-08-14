@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Projetos</title>
+
+    <style>
+        *{ margin: 0; padding: 0;box-sizing: border-box;}
+        body{
+            background: linear-gradient(79.07deg, #30003E 0%, #2C015D 46.83%, #290279 86.9%, #290283 99.04%);
+        }
+        
+        ul{
+            list-style: none;
+        }
+        .img-container{
+            text-align: center;
+        }
+        .img-container img{
+            width: 100px;
+            margin-top: 50px;
+        }
+
+        main ul{
+            text-align: center;
+            font-family: "Helvetica Neue",Helvetica;
+            margin-top: 50px;
+        }
+        main ul li{
+            margin-top: 20px;
+        }
+        main ul li a{
+            position: relative;
+            
+            color: #fff;
+            text-decoration: none;
+            display:inline-block;
+
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+        main ul li a::after{
+            content: "";
+            position:absolute;
+            background: #fff;
+
+            width: 0%;
+            height: 1px;
+
+            left: 0px;
+            bottom: 0px;
+            transition: .2s;
+        }
+
+        main ul li a:hover::after{
+            width: 100%;
+        }
+        main ul li a img{
+            width: 36px;
+            position: relative;
+            top: 7px;
+            margin-right: 10px;
+        }   
+    </style>
+
+
+</head>
+<body>
+    <main>
+        <div class="img-container"><img src="./logo.svg" alt="" srcset=""></div>
+
+        <ul>
+            <li>
+                <a target="_blank" href="./Barbearia-Alura/index.html">
+                    <img src="./pasta.svg" alt="">    Barbearia Alura
+                </a>
+            </li>
+            
+        </ul>
+    </main>
+    
+</body>
+</html>
